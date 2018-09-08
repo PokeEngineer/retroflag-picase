@@ -11,7 +11,9 @@ Changes:
 - Pressing "RESET" will ONLY exit a game, if not in ES, it will clear the terminal.
 
 --------------------
-**_ONLY FOR RETROPIE!_**   (I might try to do it for RecalBox if I have time.)
+**_ONLY FOR RETROPIE!_**
+(I might try to do it for RecalBox if I have time.)
+
 --------------------
 
 Example for RetroPie:
