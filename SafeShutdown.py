@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-# Safe Shutdown script for Retropie and Retroflag NesPi+ case
 from gpiozero import Button, LED
+import os
 import signal
 import subprocess
 import time
-import os.path
 
 powerPin = 3
 resetPin = 2
@@ -71,7 +70,7 @@ def power_switch_off():
             close_emulators(rc_pid)
         exit_es('es-shutdown', es_pid)
     else:
-        subprocess.call('sudo shutdown -h now', shell=True)
+        os.system("sudo shutdown -h now")
 
 
 def power_switch_on():
@@ -85,9 +84,8 @@ def reset_pressed():
         rc_pid = get_rc_pid()
         if rc_pid:
             close_emulators(rc_pid)
-        exit_es('es-restart', es_pid)
     else:
-        subprocess.call('sudo reboot', shell=True)
+        os.system("clear")
 
 
 # Setup button handlers

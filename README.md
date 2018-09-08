@@ -1,6 +1,3 @@
-Updated: 2018.5.14
-Metadata in emulationstation will be saved when rebooting and shutting down.
-
 # retroflag-picase
 ## RetroFlag Pi-Case+ Safe Shutdown
 
@@ -8,7 +5,13 @@ Metadata in emulationstation will be saved when rebooting and shutting down.
 
 ![Safe Shutdown Switch](http://retroflag.com/images/nespi_case+/safe_shutdown.jpg "Safe Shutdown Switch")
 
-Script will attempt to close a running emulator kindly and force close if it takes too long to respond. Then it will close EmulationStation kindly to save metadata before reset or shutdown.
+This is a fork of [@esisco](https://github.com/esisco)'s fork that translated the basic outline of [@crcerror](https://github.com/crcerror)'s [multi_switch.sh](https://github.com/crcerror/retroflag-picase/blob/master/multi_switch.sh) Bash script into Python and neatly packed into the existing [SafeShutdown.py](../SafeShutdown.py) Python script. The thing shuts the Pi down more properly than the original script and saves metadata with it. This fork just modifies the script a bit to act more like the NES Classic Edition. It also fixes some things that didn't make sense.
+
+Changes:
+- Pressing "RESET" will ONLY exit a game, if not in ES, it will clear the terminal.
+
+**_ONLY FOR RETROPIE!_**
+(I might try to do it for RecalBox if I have time.)
 
 --------------------
 
@@ -19,7 +22,7 @@ Example for RetroPie:
 4. In the terminal, type the one-line command below(Case sensitive):
 
 ```bash
-wget -O - "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/install.sh" | sudo bash
+wget -O - "https://raw.githubusercontent.com/PokeEngineer/retroflag-picase/master/install.sh" | sudo bash
 ```
 
 --------------------
