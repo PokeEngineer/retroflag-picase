@@ -5,14 +5,13 @@
 
 ![Safe Shutdown Switch](http://retroflag.com/images/nespi_case+/safe_shutdown.jpg "Safe Shutdown Switch")
 
-This is a fork of [@esisco](https://github.com/esisco)'s fork that translated the basic outline of [@crcerror](https://github.com/crcerror)'s [multi_switch.sh](https://github.com/crcerror/retroflag-picase/blob/master/multi_switch.sh) Bash script into Python and neatly packed into the existing [SafeShutdown.py](../SafeShutdown.py) Python script. The thing shuts the Pi down more properly than the original script and saves metadata with it. This fork just modifies the script a bit to act more like the NES Classic Edition. It also fixes some things that didn't make sense.
+This is a fork of [esisco](https://github.com/esisco)'s fork that translated the basic outline of [crcerror](https://github.com/crcerror)'s [multi_switch.sh](https://github.com/crcerror/retroflag-picase/blob/master/multi_switch.sh) Bash script into Python and neatly packed into the existing [SafeShutdown.py](../SafeShutdown.py) Python script. The thing shuts the Pi down more properly than the original script and saves metadata with it. This fork just modifies the script a bit to act more like the NES Classic Edition. It also fixes some things that didn't make sense.
 
 Changes:
 - Pressing "RESET" will ONLY exit a game, if not in ES, it will clear the terminal.
 
-**_ONLY FOR RETROPIE!_**
-(I might try to do it for RecalBox if I have time.)
-
+--------------------
+**_ONLY FOR RETROPIE!_**   (I might try to do it for RecalBox if I have time.)
 --------------------
 
 Example for RetroPie:
